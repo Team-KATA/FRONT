@@ -1,0 +1,24 @@
+* {
+  /* font-family: 'Pretendard', 'Apple SD Gothic Neo', Sans-serif !important; */
+  font-family: 'Pretendard', 'Apple SD Gothic Neo' !important;
+  box-sizing: border-box;
+
+  word-break: break-word;
+
+  /* word-break: keep-all; */
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+}
