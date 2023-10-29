@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { GlobalStyleType } from 'styles/global.styles';
+import StyledTitle from 'Atoms/title'
 
 const StyledHome = styled.article.attrs((props) => {})`
   ${(props) => {
@@ -10,7 +11,12 @@ const StyledHome = styled.article.attrs((props) => {})`
     const $color_key_color = Theme.palette.$color_key_color;
     return css`
       min-height: 100vh;
-      background-color: ${$color_base_white};
+      // background-color: ${$color_base_white};
+      padding-top: 20px;
+
+      ${StyledTitle} {
+        font-size: 2rem !important;
+      }
     `;
   }}
 `;

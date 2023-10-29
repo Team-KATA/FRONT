@@ -29,6 +29,12 @@ export const NavList = styled.nav.attrs((props) => {})`
       ul {
         li {
           display: none;
+          span {
+            font-weight: bold;
+          }
+          svg{
+            display: block !important;
+          }
         }
         a {
           cursor: pointer;
@@ -40,6 +46,10 @@ export const NavList = styled.nav.attrs((props) => {})`
 
           &:last-child {
             margin-right: 0;
+          }
+
+          svg {
+            margin-right: 10px;
           }
 
           .divider {
@@ -145,6 +155,11 @@ const StyledHeader = styled.header.attrs((props) => {})`
       /* background-color: rgba(180, 180, 180, 0.1); */
       backdrop-filter: blur(10px);
 
+
+      .icon-wrapper {
+        display: none;
+      }
+
       .Icon {
         display: none;
         /* color: ${$base_theme_color}; */
@@ -158,8 +173,7 @@ const StyledHeader = styled.header.attrs((props) => {})`
         align-items: center;
         justify-content: flex-start;
 
-        width: calc(332px / 2) !important;
-        height: calc(81px / 2) !important;
+        width: calc(160px) !important;
 
         a {
           font-size: 24px;
@@ -184,11 +198,20 @@ const StyledHeader = styled.header.attrs((props) => {})`
         width: 100%;
         padding: 0 5%;
 
-        .Icon {
-          display: block;
+        .icon-wrapper {
+          width: 40px;
+          height: 40px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .Icon {
+            display: block;
+          }
         }
 
         ${StyledLogo} {
+          width: 120px !important;
           a {
             font-size: 20px;
           }

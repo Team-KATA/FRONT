@@ -12,6 +12,8 @@ const StyledLogo = styled.div.attrs((props) => ({}))`
 
     const $base_theme_color = Theme.baseTheme.color;
     return css`
+      width: 100%;
+
       text-decoration: none;
       cursor: pointer;
 

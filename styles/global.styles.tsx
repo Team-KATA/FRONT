@@ -23,12 +23,13 @@ const GlobalStyle = {
 
     // 짙은 카카오 컬러
     // $color_key_color: '#ffcd00',
-    $color_key_color: 'hsl(48, 100%, 50%)',
 
     // 밝은 카카오 컬러
     // $color_key_color: '#fae100',
-
-    $color_key_light: '#6CA6F9',
+    
+    $color_key_color: '#B97EE7',
+    $color_key_light: '#DCB9F8',
+    $color_key_dark: '#7E33B8',
 
     // 기본 팔레트
     $color_base_white: 'rgb(255, 255, 255, 100%)',

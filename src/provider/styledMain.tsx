@@ -10,9 +10,17 @@ const StyledMain = styled.main.attrs((props) => ({}))`
     return css`
       overflow: hidden;
       min-height: 100vh;
-      /* padding-top: ${$header_desktop_line_height}; */
+      max-width: 800px;
+      padding: 0 5%;
+      padding-top: ${$header_desktop_line_height};
+      padding-bottom: ${$header_desktop_line_height};
+      /* padding: 100px 90px 0px 90px; */
+      /* margin-left: 320px; */
+
+      margin: auto;
+
       @media screen and (max-width: ${$tablet_max_width}) {
-        /* padding-top: ${$header_mobile_line_height}; */
+        padding-top: ${$header_mobile_line_height};
       }
     `;
   }};
